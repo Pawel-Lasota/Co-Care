@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "507896066261",
+    "firebase_url": "https://easychat-b3ca0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "easychat-b3ca0",
+    "storage_bucket": "easychat-b3ca0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507896066261:android:6640d64762307db6d5b25c",
+        "android_client_info": {
+          "package_name": "com.example.easychat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAURUo9y3-1UGlQIfgnykiTj1_AUFwAwJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507896066261:android:d0d412fec226e572d5b25c",
+        "android_client_info": {
+          "package_name": "com.example.icsp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAURUo9y3-1UGlQIfgnykiTj1_AUFwAwJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

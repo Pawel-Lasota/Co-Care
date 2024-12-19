@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".medicine.AddMedicineActivity">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/back_btn"
+            android:text="Add Medicine"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/nameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/form_edit_text"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/medicineNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medicine Name"
+        android:background="@drawable/form_edit_text"
+        android:inputType="text"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/dosageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dosage"
+        android:inputType="none"
+        android:background="@drawable/form_edit_text"
+        android:focusable="false"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:inputType="none"
+        android:focusable="false"
+        android:background="@drawable/form_edit_text"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/requirementsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Requirements"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:minLines="5"
+        android:maxLines="10"
+        android:layout_margin="10dp"
+        android:background="@drawable/form_edit_text"
+        android:scrollbars="vertical" />
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_edit_text"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/addFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Medicine"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

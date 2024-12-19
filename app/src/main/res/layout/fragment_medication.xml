@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/medication_fragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medicineModel.MedicationActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/EmptyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="No Medications Scheduled"
+                android:visibility="gone"/>
+
+            <!-- Monday -->
+            <TextView
+                android:id="@+id/mondayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:text="Monday"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mondayMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Tuesday -->
+            <TextView
+                android:id="@+id/tuesdayTextView"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Tuesday"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/TuesdayMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- Wednesday -->
+            <TextView
+                android:id="@+id/wednesdayTextView"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:text="Wednesday"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <!-- Thursday -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/WednesdayMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/thursdayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:text="Thursday"
+                android:textSize="25dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ThursdayMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Friday -->
+            <TextView
+                android:id="@+id/fridayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="Friday"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/FridayMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Saturday -->
+            <TextView
+                android:id="@+id/saturdayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:text="Saturday"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/SaturdayMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Sunday -->
+            <TextView
+                android:id="@+id/sundayTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="Sunday"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/SundayMedicineRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</RelativeLayout>

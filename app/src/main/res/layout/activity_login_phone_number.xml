@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".login.LoginPhoneNumberActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:textColor="@color/dark_gray"
+        android:text="Enter Mobile Number"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="267dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/dark_gray"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="You should get a 6-digit code which you need to enter"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/send_otp_btn"
+        android:layout_width="194dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:text="Send Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_mobile_number" />
+
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:indeterminateTint="@color/my_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_otp_btn" />
+
+    <EditText
+        android:id="@+id/login_mobile_number"
+        android:layout_width="289dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:textColor="@color/dark_gray"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_countrycode" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/login_countrycode"
+        android:layout_width="113dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        app:ccp_showFlag="true"
+        app:ccp_showNameCode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

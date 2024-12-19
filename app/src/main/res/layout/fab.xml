@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Other content of your layout -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/my_primary"
+        app:borderWidth="0dp"
+        android:src="@drawable/ic_plus"
+        app:tint="@color/white"
+        app:fabSize="normal"
+        app:elevation="0dp"
+        app:fabCustomSize="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</RelativeLayout>

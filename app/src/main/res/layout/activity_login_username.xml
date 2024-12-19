@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:weightSum="100"
+    tools:context=".register.UserDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/setInfoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:textColor="@color/dark_gray"
+        android:text="Set your Info!"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/InfoDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/dark_gray"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="This is where you can set your name and email. Name can be changed later"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setInfoTextView" />
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/dark_gray"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InfoDescriptionTextView" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_margin="15dp"
+        android:textColor="@color/dark_gray"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_name" />
+
+    <Button
+        android:id="@+id/proceed_btn"
+        android:layout_width="181dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:text="Proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_name" />
+
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="170dp"
+        android:indeterminateTint="@color/my_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proceed_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

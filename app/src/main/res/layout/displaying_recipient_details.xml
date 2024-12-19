@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/edit_text_rounded_corner"
+    android:layout_margin="10dp"
+    android:elevation="2dp"
+    android:id="@+id/recipient_details"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/recipient_edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Edit"
+        android:textColor="@color/my_primary"
+        android:textSize="20dp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/recipient_remove_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@color/white"
+            android:clickable="true"
+            android:onClick="onRemoveButtonClick"
+            android:src="@drawable/ic_remove"
+            app:tint="@color/red" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circular_bg"
+            android:clipToOutline="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_icon"
+            android:id="@+id/profile_image_view"/>
+
+        <TextView
+            android:id="@+id/recipientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Recipient Name"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/recipientDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/recipientAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Age"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/recipientGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Gender"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

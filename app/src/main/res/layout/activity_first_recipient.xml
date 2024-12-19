@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/setRecipientTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Set Your First Care Recipient!"
+        android:textColor="@color/dark_gray"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/profile_pic"
+        layout="@layout/profile_pic_view"
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setRecipientTextView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Set photo (optional)"
+        android:textColor="@color/my_primary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/profile_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setRecipientTextView" />
+
+    <EditText
+        android:id="@+id/recipient_name"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Describe your care recipient. E.g. has mobility issues?"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipient_name" />
+
+    <EditText
+        android:id="@+id/recipient_description"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:hint="Description"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
+
+
+    <EditText
+        android:id="@+id/recipient_age"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="10dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipient_description" />
+
+    <Spinner
+        android:id="@+id/recipient_gender_spinner"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:hint="Gender"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipient_age" />
+
+    <Button
+        android:id="@+id/finish_btn_recipient"
+        android:layout_width="181dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipient_gender_spinner" />
+
+    <TextView
+        android:id="@+id/skip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Skip ->"
+        android:textColor="@color/my_primary"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish_btn_recipient" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checklist.ChecklistAdd"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the next upcoming task/event?"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/task_edit_text"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="50dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginEnd="100dp"
+        android:hint="Add task..."
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which caregiver to allocate the task to?"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/allocate_task"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_border"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which recipient does the task regard?"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <Spinner
+        android:id="@+id/recipient_task"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text_border"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/set_due_date"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableBottom="@drawable/baseline_calendar_today_24"
+        android:drawablePadding="8dp"
+        android:layout_margin="10dp"
+        android:text="Set Due Date"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_edit_text" />
+
+
+    <TextView
+        android:id="@+id/set_due_time"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/baseline_access_time_24"
+        android:drawablePadding="8dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Set Due Time"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_due_date" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/my_primary"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+</LinearLayout>

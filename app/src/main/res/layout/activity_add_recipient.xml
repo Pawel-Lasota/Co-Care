@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".medicine.AddMedicineActivity">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/back_btn"
+            android:text="Add Recipient"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <!-- Content -->
+    <FrameLayout
+        android:id="@+id/profileImageFrame"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/border_bg"
+        android:layout_gravity="center"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circular_bg"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_icon"
+            android:id="@+id/profile_image_view"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/RecipientNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipient Name"
+        android:background="@drawable/form_edit_text"
+        android:inputType="text"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:background="@drawable/form_edit_text"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/requirementsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Description"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:minLines="5"
+        android:maxLines="10"
+        android:layout_margin="10dp"
+        android:background="@drawable/form_edit_text"
+        android:scrollbars="vertical" />
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/form_edit_text"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/addFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

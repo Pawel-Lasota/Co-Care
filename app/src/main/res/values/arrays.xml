@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="days_of_week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="unit_array">
+        <item>ml</item>
+        <item>tsp</item>
+        <item>tbsp</item>
+        <item>mcg</item>
+        <item>mg</item>
+        <item>pills</item>
+        <item>tablets</item>
+    </string-array>
+</resources>

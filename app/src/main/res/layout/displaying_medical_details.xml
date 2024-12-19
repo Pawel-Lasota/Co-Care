@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/edit_text_rounded_corner"
+    android:layout_margin="10dp"
+    android:elevation="2dp"
+    android:id="@+id/medicine_details"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/medicine_complete_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:src="@drawable/ic_tick" />
+
+        <TextView
+            android:id="@+id/recipientTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="Recipient Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/medicineNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dosageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Dosage"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Time"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/requirementsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requirements"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/completedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:visibility="gone"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/medicine_remove_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-6dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:onClick="onRemoveButtonClick"
+        android:src="@drawable/ic_remove"
+        app:tint="@color/red" />
+
+
+</RelativeLayout>
